@@ -18,8 +18,10 @@ function Init(input) {
     console.log(ratio);
 }
 
+//Find the gcd for the two numbers
 function GetGcd(a, b) {
     var largestNumber, smallestNumber, remainder;
+    //Find the biggest and smallest numbers of the two
     if (a > b) {
         largestNumber = a;
         smallestNumber = b;
@@ -28,6 +30,9 @@ function GetGcd(a, b) {
         largestNumber = b;
         smallestNumber = a;
     }
+    //Find the smallest and largest number where smallest number will be the remainder obtained by dividing
+    //largest number by smallest one and largest number will be the previous smallest number.
+    //Repeat the above till the remainder is zero
     while (largestNumber % smallestNumber != 0) {
         remainder = largestNumber % smallestNumber;
         largestNumber = smallestNumber;
