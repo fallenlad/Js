@@ -21,7 +21,7 @@ function init() {
 
 }
 
-//Get the largest number in the input 
+//Get the largest number from the input numbers
 function GetLargestNumber(input) {
     var largestNumber;
     largestNumber = input[0];
@@ -32,7 +32,7 @@ function GetLargestNumber(input) {
     return largestNumber;
 }
 
-//Get prime numbers lesser than the given number
+//Get prime numbers lesser than the input number
 function GetPrimeNumbers(num) {
     var primeNumbers = [];
     var primeNo;
@@ -50,6 +50,7 @@ function GetPrimeNumbers(num) {
     return primeNumbers;
 }
 
+//Find the greatest and nearest square root of a number
 function GetNearestSquareRoot(num) {
     for (var i = 1; i <= num; i++) {
         if ((i * i) > num)
