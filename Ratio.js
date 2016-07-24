@@ -1,4 +1,3 @@
-//var input = { boys: 1071, girls: 462 };
 //Command line input
 //Sample input - 1071 462
 process.stdin.resume();
